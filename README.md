@@ -7,7 +7,7 @@ To perform the Cauchy combination test, user need to supply a numpy array with p
 ### Example run
 Test with p-value array only, all the p-values will have exactly same weight.
 ```python
->>> from cauchy_combination_test import cct
+>>> from cauchycombt import cct
 >>> pval_arr = np.array([0.43, 0.86, 0.003, 0.0001, 1E-4, 0.19])
 >>> cct(pval_arr)
 0.00029510164688062446
@@ -15,7 +15,7 @@ Test with p-value array only, all the p-values will have exactly same weight.
 
 Test with p-value array and weight.
 ```python
->>> from cauchy_combination_test import cct
+>>> from cauchycombt import cct
 >>> pval_arr = np.array([0.43, 0.86, 0.003, 0.0001, 1E-4, 0.19])
 >>> weight_arr = np.array([0.31, 0.35, 0.01, 0.01, 0.01, 0.31])
 >>> cct(pval_arr, weight_arr)
